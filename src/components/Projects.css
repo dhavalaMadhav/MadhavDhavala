@@ -1,0 +1,231 @@
+.section-title {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  text-align: left;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.project-category {
+  margin-bottom: 6rem;
+}
+
+.category-title {
+  font-size: 2.5rem;
+  font-family: var(--font-sans);
+  font-weight: 300;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.project-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.arched-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.arched-card:hover {
+  transform: translateY(-10px);
+}
+
+.arched-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+}
+
+.offline-container {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offline-text {
+  font-family: var(--font-sans);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+}
+
+.arched-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arched-card-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.arched-arrow {
+  color: #fff;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.arched-card-footer h4 {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.freelance-section {
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+
+.row-left {
+  animation: scroll-left 30s linear infinite;
+}
+
+.row-right {
+  animation: scroll-right 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.thumbnail-card {
+  display: inline-block;
+  width: 450px;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.thumb-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.thumb-underline {
+  display: block;
+  width: 60px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--theme-color, #e0ff00);
+  opacity: 0.8;
+}
+
+
+
+.thumbnail-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.thumbnail-card:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-450px * 4 - 2rem * 4)); }
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(calc(-450px * 4 - 2rem * 4)); }
+  100% { transform: translateX(0); }
+}
+
+@media (max-width: 1024px) {
+  .project-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-title { font-size: 4rem; }
+}
+
+@media (max-width: 768px) {
+  .project-cards-grid { grid-template-columns: 1fr; }
+  .section-title { font-size: 2.4rem; margin-bottom: 2.5rem; }
+  .category-title { font-size: 1.6rem; margin-bottom: 2rem; }
+  .project-category { margin-bottom: 3rem; }
+  .freelance-section { margin-top: 4rem; }
+  .arched-card-footer h4 { font-size: 1rem; }
+
+  /* Kill the marquee on mobile — show flat grid instead */
+  .marquee-container {
+    overflow: visible;
+  }
+  .marquee-track {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    animation: none !important;
+  }
+  /* Hide the second row (duplicate) on mobile */
+  .row-right {
+    display: none;
+  }
+  /* Only show first 4 items in row-left */
+  .thumb-wrapper:nth-child(n+5) {
+    display: none;
+  }
+  .thumb-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  .thumbnail-card {
+    width: 100%;
+    height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title { font-size: 2rem; }
+  .category-title { font-size: 1.3rem; }
+  .marquee-track {
+    grid-template-columns: 1fr;
+  }
+  .thumbnail-card { height: 180px; }
+  .offline-text { font-size: 1.5rem; }
+}
+
