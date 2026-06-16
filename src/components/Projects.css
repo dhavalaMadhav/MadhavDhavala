@@ -167,11 +167,11 @@
 
 @keyframes scroll-left {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-450px * 4 - 2rem * 4)); }
+  100% { transform: translateX(calc(-450px * 5 - 2rem * 5)); }
 }
 
 @keyframes scroll-right {
-  0% { transform: translateX(calc(-450px * 4 - 2rem * 4)); }
+  0% { transform: translateX(calc(-450px * 5 - 2rem * 5)); }
   100% { transform: translateX(0); }
 }
 
@@ -205,8 +205,8 @@
   .row-right {
     display: none;
   }
-  /* Only show first 4 items in row-left */
-  .thumb-wrapper:nth-child(n+5) {
+  /* Only show first 5 items in row-left */
+  .thumb-wrapper:nth-child(n+6) {
     display: none;
   }
   .thumb-wrapper {
