@@ -10,6 +10,17 @@ const Projects = () => {
         <h3 className="category-title">AI / ML</h3>
         <div className="project-cards-grid">
 
+          <a href="#" className="arched-card">
+            <div className="arched-image-container">
+              <img src="/proj_toleran.png" alt="Toleran" />
+            </div>
+            <div className="arched-card-footer">
+              <svg className="arched-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><line x1="7" y1="7" x2="17" y2="17"></line><polyline points="17 7 17 17 7 17"></polyline></svg>
+              <h4>Toleran — Engineering Drawing Intelligence & Design Compliance Copilot</h4>
+            </div>
+          </a>
+
+
           <a href="https://gmail-agent-lemon.vercel.app/" target="_blank" rel="noreferrer" className="arched-card">
             <div className="arched-image-container">
               <img src="/proj_gmail.png" alt="MailMind" />

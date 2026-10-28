@@ -2,6 +2,7 @@ import React from 'react';
 import './Skills.css';
 
 const skillsList = [
+  // ── AI / ML ──────────────────────────────────────────
   {
     name: "Machine Learning",
     icon: (
@@ -21,6 +22,37 @@ const skillsList = [
     )
   },
   {
+    name: "Sentence Transformers",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h1M12 9h1M16 9h1"/><path d="M9 13c1 1 4 1 6 0"/></svg>
+    )
+  },
+  {
+    name: "Computer Vision",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+    )
+  },
+  {
+    name: "YOLO (Object Detection)",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="8" y="8" width="8" height="8" rx="1"/><path d="M3 8h2M3 12h2M3 16h2M19 8h2M19 12h2M19 16h2M8 3v2M12 3v2M16 3v2M8 19v2M12 19v2M16 19v2"/></svg>
+    )
+  },
+  {
+    name: "OpenCV",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="9"/><path d="M9 9l-3-3M15 9l3-3M12 15v3"/><circle cx="12" cy="9" r="2"/><path d="M9 14c0 1.7 1.3 3 3 3s3-1.3 3-3"/></svg>
+    )
+  },
+  // ── Web & Backend ─────────────────────────────────────
+  {
+    name: "React.js",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="2"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeDasharray="3 3"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(45 12 12)" strokeDasharray="3 3"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-45 12 12)" strokeDasharray="3 3"/></svg>
+    )
+  },
+  {
     name: "Node.js",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>
@@ -30,12 +62,6 @@ const skillsList = [
     name: "Express.js",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="8" y1="20" x2="8.01" y2="20"/><line x1="12" y1="18" x2="12.01" y2="18"/><line x1="12" y1="22" x2="12.01" y2="22"/><line x1="16" y1="16" x2="16.01" y2="16"/><line x1="16" y1="20" x2="16.01" y2="20"/></svg>
-    )
-  },
-  {
-    name: "React.js",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="2"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" strokeDasharray="3 3"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(45 12 12)" strokeDasharray="3 3"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(-45 12 12)" strokeDasharray="3 3"/></svg>
     )
   },
   {
@@ -50,6 +76,7 @@ const skillsList = [
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><ellipse cx="12" cy="5" rx="4" ry="2"/><path d="M8 5v6c0 1.1 1.8 2 4 2s4-.9 4-2V5"/><path d="M8 11v6c0 1.1 1.8 2 4 2s4-.9 4-2v-6"/></svg>
     )
   },
+  // ── DevOps & Tools ────────────────────────────────────
   {
     name: "Docker",
     icon: (
